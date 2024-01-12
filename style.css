@@ -1,0 +1,226 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #36454F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FC7BB0;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0057D9;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #6A1B9A; /* Or another color from your design system */
+    color: white;
+    position: relative;
+}
+
+.activity-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This creates a 3-column grid */
+    gap: 10px; /* Adjust the gap as needed */
+    padding: 20px;
+}
+
+.activity-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Adds rounded corners to the images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.banner-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Aligns text to the right */
+}
+
+.cta-button {
+    background-color: #FF7043;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.flex-container {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    width: 50%;
+    padding: 20px;
+}
+
+.flex-item img {
+   
+    max-width: 100%;
+    height:auto;
+    margin-bottom: 20px;
+    
+}
+img[src="/images/maya.jpeg"] {
+    float: left;
+    width: 100%; /* ou une valeur spécifique comme 500px */
+    height: auto; /* pour maintenir le ratio d'aspect */
+    max-width: 100%; /* pour s'assurer qu'il ne dépasse pas la largeur de son conteneur */
+}
+#mission-description {
+    text-align: left;
+    
+}
+.flex-item p {
+    text-align: center;
+}
+
+
+/* Programs Section */
+#programs {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#blog {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #FFFFFF; /* Crisp White background */
+}
+
+#blog h2 {
+    color: #6A1B9A; /* Deep Purple for headers */
+}
+
+#blog .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog .flex-item {
+    background-color: #6A1B9A; /* Deep Purple for thumbnail overlays */
+    color: #FFFFFF; /* Crisp White for text over images */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* Newsletter Section */
+#newsletter {
+    background-color: #f2f2f2; /* Light grey background for contrast */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#newsletter h2 {
+    color: #36454F; /* Dark text for the title */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#newsletter form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#newsletter input[type="email"] {
+    border: 2px solid #C0C0C0; /* Light grey border */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for the input field */
+    font-size: 1em;
+}
+
+#newsletter input[type="submit"] {
+    background-color: #FC7BB0; /* Pink background for the submit button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-weight: bold;
+}
+
+#newsletter input[type="submit"]:hover {
+    background-color: #EA267A; /* Slightly darker pink on hover */
+}
+/* Reuse styles from Contact Us Section */
+
+/* Footer Section */
+
+footer {
+    background-color: #36454F;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
